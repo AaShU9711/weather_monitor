@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4f8;
+}
+
+.weather-card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+}
+
+.weather-icon {
+  @apply w-12 h-12;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-semibold text-white transition-colors duration-300;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-500 hover:bg-gray-600;
+}
+
+.input {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50;
+}
